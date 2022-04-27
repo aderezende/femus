@@ -34,7 +34,7 @@ double minus_Deltu_U0(const std::vector<double> & x_qp){
     // Function = x*y*z*(z-2.0)*(x*x + y*y - 1.0)
     
     // Return -Delta U0
-    return -( 12.0 * x * y * z * (z - 2.0) + 2 * x * y * ( x * x + y * y ) );
+    return (12.0 * x * y * z * (z - 2.0) + 2.0 * x * y * ( x * x + y * y ));
 }
 
 
